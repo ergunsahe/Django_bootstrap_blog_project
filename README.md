@@ -1,0 +1,1 @@
+# Django_bootstrap_blog_project
