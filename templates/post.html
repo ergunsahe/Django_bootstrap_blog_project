@@ -13,7 +13,7 @@
             <h2 class="subheading">{{ post.subtitle }}</h2>
             <span class="meta">Posted by
               <a href="#">{{ post.author}}</a>
-              on {{ post.date }}</span>
+              on {{ post.date|date:"F d, Y"  }}</span>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-         {{ post.content}}
+         {{ post.content|safe}}
         </div>
       </div>
     </div>
